@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <h1>hhsss</h1>
+        <introduce title="hf"></introduce>
+    </div>
+
+</body>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script>
+    Vue.component("introduce",{
+        template:'<h1>{{title}}</h1>',
+        props:['title']
+    });
+
+    const  myList = {
+        template: '<ul><li v-for="item" in i></li></ul>'
+    }
+</script>
+</html>
